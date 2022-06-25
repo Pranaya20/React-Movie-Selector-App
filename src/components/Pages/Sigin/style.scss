@@ -1,0 +1,39 @@
+.maincontainer{
+    .split {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+       
+      }
+      
+      .left {
+        left: 0;
+        /* background-color: #111; */
+        background-image: url("../../assert/images/backgroundImg.png");
+        height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      .right {
+        right: 0;
+        background-color: white;
+        .container_body{
+            padding:50px;
+        }
+        h2{
+            margin-bottom: 30px;
+        }
+        .errorContainer{
+            color:red;
+            font:bold 12px;
+        }
+      }
+      
+
+}
