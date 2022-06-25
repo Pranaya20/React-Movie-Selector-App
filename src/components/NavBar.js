@@ -10,12 +10,13 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
+          <NavLink exact to="/ " className="nav-logo">
             BestMovie
             <i className="fas fa-film"></i>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
+          
             <li className="nav-item">
               <NavLink
                 exact

@@ -9,7 +9,6 @@ import { Button } from '../../Button/Button';
 
 
 export default function SearchMovie() {
-  const [formValue, setFormValue] = useState({ name:'' });
   const [query, setQuery] = useState('');
   const [movies, setMovies] = useState([]);
   
@@ -41,7 +40,7 @@ export default function SearchMovie() {
         <LabelComponents labelname='Movie Name :' marginBottom="5px" fontSize="16px" color="black"/>
          <InputComponent onChange={(e) => setQuery(e.target.value)} width='60%' marginBottom="10px" marginTop="10px" name='name'/>
          
-         <Button width='30%' text='Search' type="submit" />
+         <Button width='30%' text='Search' type="submit" disabled={!query}/>
       </form>
       
       <div className="card-list">

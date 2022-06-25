@@ -23,6 +23,7 @@ const LinkStyled = styled.div`
 `;
 
 const ButtonStyled = styled.button`
+  disabled:${props => props.disabled || "none"};
   color: ${props => props.color || Colors.whiteColor};
   font-size: ${props => props.fontSize || `${Fonts.fs_16}`} !important;
   font-weight: ${props => props.fontWeight || `${Fonts.fw_500}`} !important;
